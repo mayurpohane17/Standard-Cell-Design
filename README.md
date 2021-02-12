@@ -4,14 +4,23 @@ Custom standard cells are designed for the Skywater130nm node
 
 ## Standard Cells
 1.And2_1x
+
 2.And3_1x
+
 3.And4_1x
+
 4.And2_2x
+
 5.And3_2x
+
 6.And4_2x
+
 7.a2111oi
+
 8.a311oi
+
 9.a31oi
+
 10.a32oi
 
 ## What is Non Linear Delay Model(NLDM)?
@@ -45,4 +54,9 @@ The following schematic are designed using Xschem.
 The simulation is done using the Ngspice. Ngspice is a open source simulation and analysis tool.
 
 To run spice simulation use `ngspice <filename>.spice`
+Include the lib file which contains the model file locations.
+pfet and nfet are used here.
+
+
+
 
