@@ -2,7 +2,7 @@
 
 Custom standard cells are designed for the Skywater130nm node
 
-##Standard Cells
+## Standard Cells
 1.And2_1x
 2.And3_1x
 3.And4_1x
@@ -14,12 +14,12 @@ Custom standard cells are designed for the Skywater130nm node
 9.a31oi
 10.a32oi
 
-##What is Non Linear Delay Model(NLDM)?
+## What is Non Linear Delay Model(NLDM)?
 NLDM is derived from SPICE characterizations and is a highly reliable timing model. The table model is referred to as an NLDM and is used to measure the delay, performance slew, or other timing checks. Most of the cell libraries used table models to specify the delay and timing checks for different cell timing arcs.
 
 For different combinations of input at the cell input pin and multiple output capacitance at the cell output pin, the table provides the delay through the cell. In a two-dimensional array, where the two independent variables are the input transition and the capacitance of the output load and the entries in the table are the delays. The characterization is performed using the ngspice open source circuit simulator.
 
-##Cell Rise Time, Fall Time, Rise Transition and Fall Transition
+## Cell Rise Time, Fall Time, Rise Transition and Fall Transition
 
 The time taken by a signal to increase from 20 percent to 80 percent of its maximum value is known as "rise time". 
 The time taken by a signal to increase from 80 percent to 20 percent of its maximum value is known as "fall time".
@@ -34,7 +34,7 @@ Considering the rise/fall of both input and output, we are faced with four propa
 50% of input fall to 50% of output fall.
 All the delays will have different values, or in some cases same values.
 
-##Schematic Diagram 
+## Schematic Diagram 
 The following schematic are designed using Xschem.
 
 ![](Images/AND_schematic.PNG)
