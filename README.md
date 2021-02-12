@@ -56,7 +56,25 @@ The simulation is done using the Ngspice. Ngspice is a open source simulation an
 To run spice simulation use `ngspice <filename>.spice`
 Include the lib file which contains the model file locations.
 pfet and nfet are used here.
+Using the spice commands, Calculate the Fall time Rise time and Transition Fall and Rise Delay.
 
-
-
-
+### Fall Time
+        Measuring Cell Fall Time @ 50% of VDD(1.8V) 
+        meas tran tinfall when v(A)=0.9 FALL=1 
+        meas tran tofall when v(X)=0.9 FALL=1
+        let cfall = (tofall-tinfall)/1e-9
+### Rise Time
+        Measuring Cell Rise Time @ 50% of VDD(1.8V) 
+        meas tran tinrise when v(in1)=0.9 RISE=1 
+        meas tran torise when v(out)=0.9 RISE=1
+        let crise = (torise-tinrise)/1e-9
+### Fall Transition        
+        Measuring Fall Transion Time @ 80-20% of VDD(1.8V) 
+        meas tran ft1 when v(out)=1.44 FALL=1 
+        meas tran ft2 when v(out)=0.36 FALL=1
+        let fall_tran = (ft2-ft1)/1e-9
+### Rise Transition        
+        Measuring Rise Transion Time @ 20-80% of VDD(1.8V) 
+        meas tran rt1 when v(out)=1.44 RISE=1 
+        meas tran rt2 when v(out)=0.36 RISE=1
+        let rise_tran = (rt1-rt2)/1e-9
