@@ -1,0 +1,15 @@
+**.subckt A123B1
+X0 net9 net6 net1 VCC pmos w=0.42u l=0.15u m=1
+X1 net9 net7 net1 VCC pmos w=0.42u l=0.15u m=1
+X2 net9 net8 net1 VCC pmos w=0.42u l=0.15u m=1
+X3 <UNCONNECTED PIN> <UNCONNECTED PIN> <UNCONNECTED PIN> VCC pmos w=0.42u l=0.15u m=1
+X5 <UNCONNECTED PIN> <UNCONNECTED PIN> net2 VSS nmos w=0.42u l=0.15u m=1
+X6 net2 <UNCONNECTED PIN> net3 VSS nmos w=0.42u l=0.15u m=1
+X7 net3 <UNCONNECTED PIN> net4 VSS nmos w=0.42u l=0.15u m=1
+X8 <UNCONNECTED PIN> <UNCONNECTED PIN> <UNCONNECTED PIN> VSS nmos w=0.42u l=0.15u m=1
+X4 <UNCONNECTED PIN> <UNCONNECTED PIN> <UNCONNECTED PIN> VCC pmos w=0.42u l=0.15u m=1
+X9 <UNCONNECTED PIN> <UNCONNECTED PIN> <UNCONNECTED PIN> VSS nmos w=0.42u l=0.15u m=1
+**** begin user architecture code
+**** end user architecture code
+**.ends
+.end

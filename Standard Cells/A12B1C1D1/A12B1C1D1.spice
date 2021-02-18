@@ -1,0 +1,15 @@
+**.subckt A12B1C1D1
+X0 net3 net7 net11 VCC pmos w=0.42u l=0.15u m=1
+X1 net3 net5 net11 VCC pmos w=0.42u l=0.15u m=1
+X3 net4 net8 net3 VCC pmos w=0.42u l=0.15u m=1
+X6 net6 net7 net1 VSS nmos w=0.42u l=0.15u m=1
+X7 net1 net5 net2 VSS nmos w=0.42u l=0.15u m=1
+X8 net6 net8 net2 VSS nmos w=0.42u l=0.15u m=1
+X4 net12 net9 net4 VCC pmos w=0.42u l=0.15u m=1
+X9 net6 net9 net2 VSS nmos w=0.42u l=0.15u m=1
+X2 net6 net10 net12 VCC pmos w=0.42u l=0.15u m=1
+X5 net6 net10 net2 VSS nmos w=0.42u l=0.15u m=1
+**** begin user architecture code
+**** end user architecture code
+**.ends
+.end

@@ -1,0 +1,15 @@
+**.subckt A123B12
+X0 net9 net8 net1 VCC pmos w=0.42u l=0.15u m=1
+X1 net9 net10 net1 VCC pmos w=0.42u l=0.15u m=1
+X2 net9 net11 net1 VCC pmos w=0.42u l=0.15u m=1
+X3 net2 net13 net9 VCC pmos w=0.42u l=0.15u m=1
+X4 net2 net12 net9 VCC pmos w=0.42u l=0.15u m=1
+X5 net2 net8 net3 VSS nmos w=0.42u l=0.15u m=1
+X6 net3 net10 net4 VSS nmos w=0.42u l=0.15u m=1
+X7 net4 net11 net5 VSS nmos w=0.42u l=0.15u m=1
+X8 net2 net13 net6 VSS nmos w=0.42u l=0.15u m=1
+X9 net6 net12 net5 VSS nmos w=0.42u l=0.15u m=1
+**** begin user architecture code
+**** end user architecture code
+**.ends
+.end
