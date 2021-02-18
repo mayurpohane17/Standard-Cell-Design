@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Standard-Cell-Design and NLDM using NGSPICE
 
 
@@ -146,4 +146,3 @@ Using the spice commands, Calculate the Fall time Rise time and Transition Fall 
         meas tran rt1 when v(out)=1.44 RISE=1 
         meas tran rt2 when v(out)=0.36 RISE=1
         let rise_tran = (rt1-rt2)/1e-9
->>>>>>> e7c7d65e7c1aeb33fd31bcc7edd90e58cfc66a28
