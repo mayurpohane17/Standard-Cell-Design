@@ -1,4 +1,4 @@
-
+Spice file simualations and their respective fall and transition files have been created for each cell
 # Standard-Cell-Design
 
 Custom standard cells are designed for the Skywater130nm node
