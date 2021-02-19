@@ -18,5 +18,4 @@ actual_rise_slew:0.390446
 actual_fall_slew:0.390445
 input_delay:1.5n
 actual_rise_slew:0.9
-actual_fall_slew:
-
+actual_fall_slew:0.171074

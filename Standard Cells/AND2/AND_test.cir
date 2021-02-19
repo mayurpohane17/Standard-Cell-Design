@@ -1,0 +1,30 @@
+
+
+
+.include sky130nm.lib
+
+X1 C A VPWR VPB sky130_fd_pr__pfet_01v8 l=0.15u w=0.42u
+X2 C B VPWR VPB sky130_fd_pr__pfet_01v8 l=0.15u w=0.42u
+
+X3 C A D VNB sky130_fd_pr__nfet_01v8 l=0.15u w=0.42u
+X4 D B VGND VNB sky130_fd_pr__nfet_01v8 l=0.15u w=0.42u
+
+X5 X C VPWR VPB sky130_fd_pr__pfet_01v8 l=0.15u w=0.42u
+X6 X C VGND VNB sky130_fd_pr__nfet_01v8 l=0.15u w=0.42u
+
+
+VDD VPWR 0 1.8
+VSS VGND 0 0V
+
+Va A VGND PULSE (0 1.8 0n 0.01n 0.01n 2ns 4ns)
+Vb B VGND PULSE (0 1.8 0n 0.01n 0.01n 4ns 8ns)
+
+C1 X 0 0.005p
+
+
+
+.control
+tran 1 10ns
+
+.endc
+.end

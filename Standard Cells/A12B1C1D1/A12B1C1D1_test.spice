@@ -1,0 +1,34 @@
+
+.include sky130nm.lib
+
+
+X0 net3 A1 VPWR VCC sky130_fd_pr__pfet_01v8 w=0.42u l=0.15u m=1
+X1 net3 A2 VPWR VCC sky130_fd_pr__pfet_01v8 w=0.42u l=0.15u m=1
+X3 net4 B1 net3 VCC sky130_fd_pr__pfet_01v8 w=0.42u l=0.15u m=1
+X6 Y A1 net1 VSS sky130_fd_pr__nfet_01v8 w=0.42u l=0.15u m=1
+X7 net1 A2 VGND VSS sky130_fd_pr__nfet_01v8 w=0.42u l=0.15u m=1
+X8 Y B1 VGND VSS sky130_fd_pr__nfet_01v8 w=0.42u l=0.15u m=1
+X4 net12 c1 net4 VCC sky130_fd_pr__pfet_01v8 w=0.42u l=0.15u m=1
+X9 Y c1 VGND VSS sky130_fd_pr__nfet_01v8 w=0.42u l=0.15u m=1
+X2 Y D1 net12 VCC sky130_fd_pr__pfet_01v8 w=0.42u l=0.15u m=1
+X5 Y D1 VGND VSS sky130_fd_pr__nfet_01v8 w=0.42u l=0.15u m=1
+
+VDD VPWR 0 1.8
+VSS VGND 0 0V
+
+Va1 A1 VGND PULSE (0 1.8 0n 0.01n 0.01n 2ns 4ns)
+Va2 A2 VGND PULSE (0 1.8 0n 0.01n 0.01n 4ns 8ns)
+Vb1 B1 VGND PULSE (0 1.8 0n 0.01n 0.01n 8ns 16ns)
+Vc1 c1 VGND PULSE (0 1.8 0n 0.01n 0.01n 16ns 32ns)
+Vd1 D1 VGND PULSE (0 1.8 0n 0.01n 0.01n 32ns 64ns)
+
+C1 Y 0 0.005p
+
+
+
+.control
+
+tran 1 70ns
+.endc
+.end
+
