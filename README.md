@@ -47,8 +47,7 @@ All the delays will have different values, or in some cases same values.
 ## Schematic Diagram 
 The following schematic are designed using Xschem.
 
-![](Images/AND_schematic.PNG)
-
+![](Images/Circuits/AND_schematic.PNG)
 
 ## Pre Layout Simulation
 
